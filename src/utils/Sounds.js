@@ -1,4 +1,4 @@
 export const playClick = () => {
-  const sound = new Audio('/click.mp3')
+  const sound = new Audio(`${import.meta.env.BASE_URL}click.mp3`)
   sound.play()
 }

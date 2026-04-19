@@ -63,21 +63,20 @@ function App(){
   }
 
   const playOpenSound = () => {
-    const sound = new Audio('/toggle_on.mp3')
+    const sound = new Audio(`${import.meta.env.BASE_URL}toggle_on.mp3`)
     sound.play()
   }
 
   const playClick = () => {
-    const sound = new Audio('/click.mp3')
+    const sound = new Audio(`${import.meta.env.BASE_URL}click.mp3`)
     sound.play()
   }
 
   const closeWindow = () => {
-    const sound = new Audio('/toggle_off.mp3')
+    const sound = new Audio(`${import.meta.env.BASE_URL}toggle_off.mp3`)
     sound.play()
 
     setIsClosing(true)
-
     setTimeout(() => {
       setActiveWindow(null)
       setIsClosing(false)
@@ -106,7 +105,7 @@ function App(){
           <span className="menuLabel">About Me</span>
         </button>
 
-        <button className="menuButton" onClick={() => { playOpenSound(); window.open('/Resume.pdf', '_blank') }}>
+        <button className="menuButton" onClick={() => { playOpenSound(); window.open(`${import.meta.env.BASE_URL}Resume.pdf`, '_blank') }}>
           <img src={resumeIcon} alt="Resume" className='menuIcon' />
           <span className="menuLabel">Resume</span>
         </button>

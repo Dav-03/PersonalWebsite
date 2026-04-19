@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Contact.css'
-import { playClick } from '../utils/sounds'
+import { playClick } from '../utils/Sounds'
 
 function Contact() {
   const [copied, setCopied] = useState(false)
