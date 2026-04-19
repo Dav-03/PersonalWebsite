@@ -1,0 +1,103 @@
+.circle {
+  width: 150px;
+  height: 150px;
+  border: 4px solid #c8a96e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.profilePic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popupContent {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  min-height: 0;
+}
+
+.aboutTop {
+  padding-bottom: 18px;
+  flex-shrink: 0;
+}
+
+.aboutHeader {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.aboutText {
+  flex: 1;
+  min-width: 0;
+}
+
+.name1 {
+  color: #1a4b28;
+  font-size: clamp(32px, 5vw, 64px);
+  line-height: 1.1;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 10px 0 0;
+  font-size: 18px;
+  color: #444;
+}
+
+.aboutDivider {
+  height: 2px;
+  background-color: #aca99f;
+  flex-shrink: 0;
+}
+
+.aboutBody {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding-top: 18px;
+  padding-right: 8px;
+}
+
+.aboutBody::-webkit-scrollbar {
+  width: 6px;
+}
+
+.aboutBody::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.aboutSection {
+  margin-top: 28px;
+}
+
+.aboutSection:first-child {
+  margin-top: 0;
+}
+
+.bold {
+  font-size: 35px;
+  margin: 0 0 12px;
+}
+
+.aboutBody p {
+  margin: 0 0 18px;
+}
+
+.aboutBody ul {
+  margin: 0 0 18px 22px;
+  padding: 0;
+}
+
+.aboutBody li {
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
