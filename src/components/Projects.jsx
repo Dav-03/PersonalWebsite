@@ -19,12 +19,12 @@ const projects = [
     repo: 'https://github.com/Dav-03/LawnNotify.git'
   },
   {
-    title: 'BMP Image Compressor/Decompressor',
-    tech: ['C++', 'Linux', 'Huffman Coding', 'Bit-level Encoding/Decoding', 'Memory Management', 'POSIX System Calls'],
-    description: 'A C++ tool for compressing and decompressing BMP images using Huffman coding.',
-    image: `${import.meta.env.BASE_URL}bmpImage.png`,
+    title: 'Threat Intel Dashboard',
+    tech: ['Python', 'React', 'Tailwind CSS', 'FastAPI', 'SQLAlchemy', 'Alembic', 'PostgreSQL', 'Docker', 'Kubernetes', 'GitHub Actions'],
+    description: 'A full-stack security platform that processes threat feeds and visualizes IOCs in real time.',
+    image: `${import.meta.env.BASE_URL}threat-intelligence-sharing-red.png`,
     imageClass: 'projectImage projectImage--contain',
-    repo: 'https://github.com/Dav-03/BMP-Image-Compressor-Decompressor.git'
+    repo: 'https://github.com/Dav-03/Threat-Intelligence-Dashboard.git'
   },
   {
     title: 'LawnNotify',
